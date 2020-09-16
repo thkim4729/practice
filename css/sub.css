@@ -21,6 +21,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @media all and (min-width:700px) {
     .pc {
         display: block;
@@ -76,7 +83,7 @@ header {
     z-index: 999;
 }
 
-.pc .header>a {
+.header>a {
     display: block;
     width: 250px;
     height: 50px;
@@ -84,100 +91,47 @@ header {
     margin: 25px 0 0 5%;
 }
 
-.pc .logo {
+.logo {
     width: 250px;
     height: 50px;
 }
 
-.pc .logo img {
+.logo img {
     height: 100%;
 }
 
-.pc nav {
+nav {
     float: right;
     margin: 39px 5% 0 0;
 }
 
-.pc .gnb {
+.gnb {
     font-size: 0;
 }
 
-.pc .gnb li {
+.gnb li {
     display: inline-block;
     margin-right: 50px;
 }
 
-.pc .gnb li:last-child {
+.gnb li:last-child {
     margin-right: 0;
 }
 
-.pc .gnb li a {
+.gnb li a {
     font-size: 20px;
     color: #ccc;
     transition: all 0.3s;
     font-family: 'GoyangIlsan';
 }
 
-.pc .gnb li:hover a {
+.gnb li:hover a {
     color: #00ff00;
     font-family: 'GoyangIlsan';
 }
 
-.phone {
-    position: relative;
-}
-
-.phone .header {
-    margin: 0 auto;
-    width: 214.64px;
-}
-
-.phone .header>a {
-    display: block;
-    margin-top: 25px;
-    width: 250px;
-    height: 50px;
-}
-
-.phone .logo {
-    width: 250px;
-    height: 50px;
-}
-
-.phone .logo img {
-    height: 100%;
-}
-
-.phone .header nav {}
-
-.phone .header nav i {
-    display: block;
-    color: #ccc;
-    position: absolute;
-    top: 10px;
-    transform: translateY(-50%);
-    left: 50px;
-    transform: translateX(-50%);
-    font-size: 24px;
-    transition: all 0.2s;
-}
-
-.phone .header nav a:hover i {
-    color: #00ff00;
-}
-
 #header_transparent {
     height: 100px;
-}
-
-/*-------------------------------------비주얼-------------------------------------*/
-#visual {}
-
-.visual_box {}
-
-.visual_box img {
-    width: 100%;
-    filter: brightness(85%);
 }
 
 /*-------------------------------------컨텐츠-------------------------------------*/
@@ -210,50 +164,43 @@ header {
 
 .slide .slide_box li {
     height: 300px;
+    width: 48%;
+    float: left;
+    position: relative;
+    margin: 1%;
 }
 
 .slide .slide_box li:hover a img {
     transform: scale(1.1);
 }
 
-.slide .slide_box li a {}
+.slide .slide_box li:hover div {
+    color: #00ff00;
+}
+
+.slide .slide_box li a {
+    height: 300px;
+    width: 50%;
+    display: block;
+    float: left;
+}
 
 .slide .slide_box li a img {
     width: 100%;
     transition: all 0.2s;
 }
 
-.notice {}
-
-.notice .notice_title {
-    color: #ccc;
-    text-align: center;
-    margin-bottom: 100px;
-    font-size: 24px;
-    font-family: 'InfinitySans-RegularA1';
-    letter-spacing: 1px;
-}
-
-.notice:hover .notice_title span {
-    color: #00ff00;
-}
-
-.notice .notice_title span {
-    transition: all 0.3s;
-}
-
-.notice>div {
-    width: 32%;
+.slide .slide_box li div {
     float: left;
-    margin-right: 2%;
-}
-
-.notice>div img {
-    width: 100%;
-}
-
-.notice>div:last-child {
-    margin-right: 0;
+    color: #ccc;
+    font-size: 24px;
+    font-family: 'paybooc-Bold';
+    transition: all 0.2s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 75%;
+    transform: translateX(-50%);
 }
 
 /*-------------------------------------푸터-------------------------------------*/
