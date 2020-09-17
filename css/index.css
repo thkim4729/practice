@@ -14,6 +14,33 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media all and (min-width:700px) {
+    .pc {
+        display: block;
+    }
+
+    .phone {
+        display: none;
+    }
+}
+
+@media all and (max-width:700px) {
+    .pc {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -49,51 +76,94 @@ header {
     z-index: 999;
 }
 
-.header>a {
+.pc .header>a {
     display: block;
     width: 250px;
     height: 50px;
     float: left;
-    margin-top: 25px;
+    margin: 25px 0 0 5%;
 }
 
-.logo {
+.pc .logo {
     width: 250px;
     height: 50px;
 }
 
-.logo img {
+.pc .logo img {
     height: 100%;
 }
 
-nav {
+.pc nav {
     float: right;
-    margin-top: 39px;
+    margin: 39px 5% 0 0;
 }
 
-.gnb {
+.pc .gnb {
     font-size: 0;
 }
 
-.gnb li {
+.pc .gnb li {
     display: inline-block;
     margin-right: 50px;
 }
 
-.gnb li:last-child {
+.pc .gnb li:last-child {
     margin-right: 0;
 }
 
-.gnb li a {
+.pc .gnb li a {
     font-size: 20px;
     color: #ccc;
     transition: all 0.3s;
     font-family: 'GoyangIlsan';
 }
 
-.gnb li:hover a {
+.pc .gnb li:hover a {
     color: #00ff00;
     font-family: 'GoyangIlsan';
+}
+
+.phone {
+    position: relative;
+}
+
+.phone .header {
+    margin: 0 auto;
+    width: 214.64px;
+}
+
+.phone .header>a {
+    display: block;
+    margin-top: 25px;
+    width: 250px;
+    height: 50px;
+}
+
+.phone .logo {
+    width: 250px;
+    height: 50px;
+}
+
+.phone .logo img {
+    height: 100%;
+}
+
+.phone .header nav {}
+
+.phone .header nav i {
+    display: block;
+    color: #ccc;
+    position: absolute;
+    top: 10px;
+    transform: translateY(-50%);
+    left: 50px;
+    transform: translateX(-50%);
+    font-size: 24px;
+    transition: all 0.2s;
+}
+
+.phone .header nav a:hover i {
+    color: #00ff00;
 }
 
 #header_transparent {
@@ -115,13 +185,17 @@ nav {
     margin-top: 100px;
 }
 
-.slide {}
+.slide {
+    margin-bottom: 100px;
+}
 
 .slide .slide_title {
     color: #ccc;
     text-align: center;
     margin-bottom: 100px;
     font-size: 24px;
+    font-family: 'InfinitySans-RegularA1';
+    letter-spacing: 1px;
 }
 
 .slide:hover .slide_title span {
@@ -149,15 +223,15 @@ nav {
     transition: all 0.2s;
 }
 
-.notice {
-    margin-top: 100px;
-}
+.notice {}
 
 .notice .notice_title {
     color: #ccc;
     text-align: center;
     margin-bottom: 100px;
     font-size: 24px;
+    font-family: 'InfinitySans-RegularA1';
+    letter-spacing: 1px;
 }
 
 .notice:hover .notice_title span {
@@ -223,7 +297,7 @@ footer {
 }
 
 .footer_menu dl dd a:hover {
-    color: white;
+    color: #00ff00;
 }
 
 .footer_menu dl dd a i {
