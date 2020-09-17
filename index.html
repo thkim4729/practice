@@ -15,11 +15,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="script/owl.carousel.min.js"></script>
+        <script src="script/includeHTML.js"></script>
+        <script src="script/includeRouter.js"></script>
         <title>RAZER KOREA</title>
     </head>
 
     <body>
         <div id="wrap">
+<<<<<<< HEAD
             <header>
                 <div class="pc">
                     <div class="header inner clear">
@@ -53,6 +56,9 @@
                 </div>
                 <!--phone-->
             </header>
+=======
+            <header include-html="header.html"></header>
+>>>>>>> 8a6029445778bb0544daa541ae14a9f0e0bcb11d
 
 
             <div id="header_transparent">
@@ -108,62 +114,7 @@
             <!--content-->
 
 
-            <footer>
-                <div class="inner">
-                    <div class="footer_menu clear">
-                        <dl>
-                            <dt>Our Network</dt>
-                            <dd><a href="#">Razer.com</a></dd>
-                            <dd><a href="#">Razer Gold & Silver</a></dd>
-                            <dd><a href="#">Razer Pay</a></dd>
-                            <dd><a href="#">Game Deals</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Shop</dt>
-                            <dd><a href="#">Razer Store (Online)</a></dd>
-                            <dd><a href="#">Razer Store (Retail)</a></dd>
-                            <dd><a href="#">Store Locator</a></dd>
-                            <dd><a href="#">My Account</a></dd>
-                            <dd><a href="#">Newsletter</a></dd>
-                            <dd><a href="#">Affiliate</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Software/Services</dt>
-                            <dd><a href="#">Razer ID</a></dd>
-                            <dd><a href="#">Synapse 3</a></dd>
-                            <dd><a href="#">Chroma</a></dd>
-                            <dd><a href="#">Cortex</a></dd>
-                            <dd><a href="#">Developer Portal</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Company</dt>
-                            <dd><a href="#">About Razer</a></dd>
-                            <dd><a href="#">Press Room</a></dd>
-                            <dd><a href="#">Investor Relations</a></dd>
-                            <dd><a href="#">Careers</a></dd>
-                            <dd><a href="#">zVentures</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Need Help?</dt>
-                            <dd><a href="#">Support</a></dd>
-                            <dd><a href="#">Warranty</a></dd>
-                            <dd><a href="#">Contact Us</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>Connect</dt>
-                            <dd><a href="#">Get Started</a></dd>
-                            <dd><a href="#">Insider</a></dd>
-                            <dd><a href="#"><i class="fab fa-facebook-f"></i></a></dd>
-                            <dd><a href="#"><i class="fab fa-twitter"></i></a></dd>
-                            <dd><a href="#"><i class="fab fa-instagram"></i></a></dd>
-                        </dl>
-                    </div>
-                    <!--footer_menu-->
-                    <p class="copyright">Copyright © 2020 Razer Inc. All rights reserved. | Legal Terms | Privacy Policy
-                        | Cookie Policy</p>
-                </div>
-                <!--inner-->
-            </footer>
+            <footer include-html="footer.html"></footer>
         </div>
         <!--wrap-->
 
@@ -191,6 +142,7 @@
                 autoplaySpeed: 250,
                 autoplayTimeout: 2500
             });
+            includeHTML();
         </script>
     </body>
 
